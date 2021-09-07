@@ -2,14 +2,16 @@
 import './App.css'
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { HomePage } from './componets/Pages/HomePage'
+import { TopPage } from './componets/Pages/TopPage'
+import { SignUp } from './componets/Pages/SignUp'
 import { Login } from './componets/Pages/Login'
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/" component={TopPage} />
+        <Route path="/signUp" component={SignUp} />
         <Route path="/login" component={Login} />
       </Switch>
     </Router>
