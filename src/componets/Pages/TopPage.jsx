@@ -44,7 +44,7 @@ export const TopPage = () => {
               variant="contained"
               className={classes.submitsignup}
               component={Link}
-              to="/Login"
+              to="/login"
             >
               ログイン
             </Button>
@@ -55,7 +55,7 @@ export const TopPage = () => {
               variant="contained"
               className={classes.submitlogin}
               component={Link}
-              to="/SignUp"
+              to="/signUp"
             >
               新規登録
             </Button>
