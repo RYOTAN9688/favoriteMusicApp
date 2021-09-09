@@ -1,19 +1,19 @@
 // import logo from './logo.svg'
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Login } from '../componets/Pages/Login'
-import { MainPage } from '../componets/Pages/MainPage'
-import { SignUp } from '../componets/Pages/SignUp'
-import { TopPage } from '../componets/Pages/TopPage'
+import { Login } from '../componets/Pages/Login/Login'
+import { MainPage } from '../componets/Pages/Main/MainPage'
+import { SignUp } from '../componets/Pages/SignUp/SignUp'
+import { TopPage } from '../componets/Pages/TopPage/TopPage'
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={TopPage} />
+        <Route path="/topPage" component={TopPage} />
         <Route path="/login" component={Login} />
         <Route path="/signUp" component={SignUp} />
-        <Route path="/main" component={MainPage} />
+        <Route exact path="/" component={MainPage} />
       </Switch>
     </Router>
   )
