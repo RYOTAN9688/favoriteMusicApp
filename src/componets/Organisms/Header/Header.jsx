@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
-import { SearchForm } from './SearchField'
+import { SearchField } from '../../Molucules/SearchField'
 
 const useStyles = makeStyles({
   header: {
@@ -20,7 +20,7 @@ export const Header = () => {
       <Button type="submit" size="medium">
         FavoriteMusic
       </Button>
-      <SearchForm />
+      <SearchField />
     </Toolbar>
   )
 }

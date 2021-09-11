@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Login } from '../componets/Pages/Login/Login'
 import { MainPage } from '../componets/Pages/Main/MainPage'
 import { SignUp } from '../componets/Pages/SignUp/SignUp'
+import { Spotify } from '../componets/Pages/TopPage/Spotify/SpotifyLogin/Spotify'
+
 import { TopPage } from '../componets/Pages/TopPage/TopPage'
-import { Spotify } from '../componets/Pages/TopPage/Spotify/Spotify'
 
 function App() {
   return (
